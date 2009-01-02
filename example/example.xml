@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+	<basicinfo>
+		<firstname>John</firstname>
+		<lastname>Doe</lastname>
+	</basicinfo>
+	<exinfo>
+		<address>Boston,MA</address>
+		<telephone>xxxx-xxxx-xxxx</telephone>
+	</exinfo>
+	<friendlist>
+		<name>john</name>
+		<name>jack</name>
+		<name>sara</name>
+	</friendlist>
+	<pclist>
+		<pcinfo>
+			<os>linux</os>
+			<cpu>i7</cpu>
+		</pcinfo>
+	</pclist>
+</info>
