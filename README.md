@@ -162,7 +162,7 @@ console.log('info.pclist.pcinfo.cpu=' + root.info.pclist.pcinfo[0].cpu);
 
 ## Example HTML
 
-- **jsjx.html**
+- **jsjx_example2.html**
 
 ```HTML
 <!DOCTYPE HTML>
@@ -173,9 +173,11 @@ console.log('info.pclist.pcinfo.cpu=' + root.info.pclist.pcinfo[0].cpu);
     <meta name="format-detection" content="telephone=no"/>
     <title></title>
     <script type="text/javascript" src="jsjx-1.0.0.js"></script>
-    <script type="text/javascript" src="jsjx-example-1.0.0.js"></script>
+    <script type="text/javascript" src="jsjx-example2.js"></script>
 </head>
 <body>
 <h3>JsJaxy Example</h3>
 Please see console log on your browser.
+
+
 ```
