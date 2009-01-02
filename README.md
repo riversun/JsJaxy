@@ -8,7 +8,33 @@ Easy to parse XML(xml document) and convert into JavaScript object.
 Allow you to get the value of 'child' element by writing like '**root.parent.child**'.
 
 It is licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+# Quick Start 1
+**Example Code**
+```JavaScript
+var xmlParser = new org.riversun.jsjx.XmlParser();
 
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://riversun.github.io/example.xml', true);
+xhr.onreadystatechange = function () {
+
+    if (xhr.readyState == 4) {
+
+        if (xhr.status == 200) {
+            var doc = xhr.responseXML;
+
+            //do parse
+            var root = xmlParser.parseDocument(doc);
+
+            //show element
+            console.log(root.info.basicinfo.firstname);
+        }
+    }
+
+};
+xhr.send(null);
+
+
+```
 # Classes & methods
 ## org.riversun.jsjx.XmlParser class
 ### Constructor
@@ -53,7 +79,7 @@ Access array element like this way.
 console.log('info.pclist.pcinfo.os=' + root.info.pclist.pcinfo[0].os);
 ```
 
-# Quick Start
+# Quick Start 2
 Here's a little example program to handle the XML.
 
 ## XML example
