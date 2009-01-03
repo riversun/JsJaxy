@@ -1,7 +1,8 @@
 var xmlParser = new org.riversun.jsjx.XmlParser();
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://riversun.github.io/example.xml', true);
+var async=true;
+xhr.open('GET', 'https://riversun.github.io/example.xml', async);
 xhr.onreadystatechange = function () {
 
     if (xhr.readyState == 4) {
